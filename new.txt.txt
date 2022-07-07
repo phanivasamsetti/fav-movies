@@ -1,0 +1,4 @@
+Phannnnii
+
+cd desktop
+git remote add origin URL
