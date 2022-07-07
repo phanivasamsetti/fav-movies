@@ -1,0 +1,270 @@
+cd d
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop
+$ cd deskop
+bash: cd: deskop: No such file or directory
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop
+$ cd 'New folder'
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git remote add origin https://github.com/phanivasamsetti/fav-movies.git
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git remote add origin https://github.com/phanivasamsetti/fav-movies.git
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git remote origin https://github.com/phanivasamsetti/fav-movies.git
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git remote add origin 'https://github.com/phanivasamsetti/fav-movies.git'
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git clone https://github.com/phanivasamsetti/fav-movies.git
+Cloning into 'fav-movies'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (7/7), done.
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git checkout master
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git checkout 'master'
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git checkout -b master
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git remote add origin master
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git remote add origin https://github.com/phanivasamsetti/fav-movies.git
+fatal: not a git repository (or any of the parent directories): .git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ ^C
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder
+$ git init
+Initialized empty Git repository in C:/Users/pvasamsetti/Desktop/New folder/.git/
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git remote add origin https://github.com/phanivasamsetti/fav-movies.git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git add 'new.txt'
+fatal: pathspec 'new.txt' did not match any files
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git add .
+warning: adding embedded git repository: fav-movies
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> fav-movies
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached fav-movies
+hint:
+hint: See "git help submodule" for more information.
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git add new.txt
+fatal: pathspec 'new.txt' did not match any files
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git add .
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git branch
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git add .
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "sec"
+[master (root-commit) d23c19a] sec
+ Committer: Phaneendra Vasamsetti <pvasamsetti@osius.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 5 insertions(+)
+ create mode 160000 fav-movies
+ create mode 100644 new.txt.txt
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ ^C
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git push --set-upstream origin master
+
+git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 59.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/phanivasamsetti/fav-movies/pull/new/master
+remote:
+To https://github.com/phanivasamsetti/fav-movies.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+Everything up-to-date
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git branch
+* master
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git -b origin main
+unknown option: -b
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git checkout -b master
+fatal: a branch named 'master' already exists
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git branch new_branch
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "new branch"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git branch b1
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (b1)
+$ git push origin b1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'b1' on GitHub by visiting:
+remote:      https://github.com/phanivasamsetti/fav-movies/pull/new/b1
+remote:
+To https://github.com/phanivasamsetti/fav-movies.git
+ * [new branch]      b1 -> b1
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (b1)
+$ cd 'New branch'
+bash: cd: New branch: No such file or directory
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder (b1)
+$ cd 'New folder'
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder/New folder (b1)
+$ ^C
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder/New folder (b1)
+$ git add .
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder/New folder (b1)
+$ git commit -m "COMMANDS"
+[b1 f114ace] COMMANDS
+ Committer: Phaneendra Vasamsetti <pvasamsetti@osius.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New folder/command.txt
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder/New folder (b1)
+$ git push origin b1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 373 bytes | 74.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/phanivasamsetti/fav-movies.git
+   d23c19a..f114ace  b1 -> b1
+
+pvasamsetti@OSIT-L-0180 MINGW64 ~/Desktop/New folder/New folder (b1)
+$
